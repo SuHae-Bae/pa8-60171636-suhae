@@ -1,5 +1,5 @@
 //60171636 배수혜
-abstract class Shape implements Drawable{ //Drawable을 구현하는 abstract 클래스 Shape을 생성한다.
+abstract class Shape implements Drawable, Movable{ //Drawable을 구현하는 abstract 클래스 Shape을 생성한다.
 	double area; //double type의 area라는 변수를 설정한다
 	double Length; //double type의 Length라는 변수를 설정한다
 	double f; //double type의 f라는 변수를 설정한다
@@ -11,6 +11,9 @@ abstract class Shape implements Drawable{ //Drawable을 구현하는 abstract �
 		//Drawable 구현
 	}
 	
+	public void move(double dx, double dy) {
+		//move 구현
+	}
 	
 	double getCoord1() {
 		//x좌표
